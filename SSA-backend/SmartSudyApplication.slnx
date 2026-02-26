@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="SmartStudy.API/SmartStudy.API.csproj" />
+  <Project Path="SmartStudy.Application/SmartStudy.Application.csproj" />
+  <Project Path="SmartStudy.Domain/SmartStudy.Domain.csproj" />
+  <Project Path="SmartStudy.Infrastructure/SmartStudy.Infrastructure.csproj" />
+</Solution>

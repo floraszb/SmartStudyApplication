@@ -1,0 +1,15 @@
+#node
+node_modules
+.next
+.env.local
+
+#.NET
+bin/
+obj/
+
+#logs
+*.log
+
+#OS
+.DS_Store
+Thumbs.db
