@@ -1,5 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using SmartStudy.Infrastructure.Data;
+using SmartStudy.Application.Interfaces;
+using SmartStudy.Infrastructure.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +13,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddHttpClient();
+builder.Services.AddScoped<IAiService, OpenAiService>();
 
 var app = builder.Build();
 
